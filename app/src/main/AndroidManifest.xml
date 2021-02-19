@@ -33,6 +33,16 @@
             android:label="@string/title_activity_favorites"
             android:theme="@style/AppThemeSecondary"
             android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".views.search.SearchSongsActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppThemeSecondary"
+            android:parentActivityName=".views.favorites.FavoriteActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.favorites.FavoriteActivity" />
+        </activity>
     </application>
 
 </manifest>

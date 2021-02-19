@@ -7,12 +7,21 @@ import android.view.Menu
 import android.view.MenuItem
 import com.janders.itunesapp.R
 import com.janders.itunesapp.views.base.BaseActivity
+import com.janders.itunesapp.views.search.SearchSongsActivity
+import kotlinx.android.synthetic.main.activity_favorites.*
 
 class FavoriteActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorites)
+        setListeners()
+    }
+
+    private fun setListeners(){
+        favoriteFAB.setOnClickListener {
+            goToActivity(SearchSongsActivity::class.java)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
