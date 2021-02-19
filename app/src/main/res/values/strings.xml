@@ -18,6 +18,10 @@
 
     <string name="error_empty_field">Este campo no debe estar vacío</string>
 
+    <!-- MENU TITLES -->
+
+    <string name="title_menu_profile">Mi perfil</string>
+
     <!-- ACTIVITY NAMES -->
 
     <string name="title_activity_favorites">Mis favoritas</string>
