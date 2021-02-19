@@ -17,4 +17,8 @@
     <!-- ERROR MESSAGES -->
 
     <string name="error_empty_field">Este campo no debe estar vacío</string>
+
+    <!-- ACTIVITY NAMES -->
+
+    <string name="title_activity_favorites">Mis favoritas</string>
 </resources>
