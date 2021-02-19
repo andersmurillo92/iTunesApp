@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">iTunesApp</string>
+
+    <!-- LOGIN -->
+
+    <string name="slogan">Your favorite artist\'s songs</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+
+    <!-- MESSAGES TO USER -->
+
+    <string name="message_please_wait">Please, wait&#8230;</string>
+    <string name="message_title_login">Logging in</string>
+    <string name="message_not_connected">Maybe you have no internet access. Please, check your Wi-Fi connection or availability of your network</string>
+
+    <!-- ERROR MESSAGES -->
+
+    <string name="error_empty_field">This field must not be empty</string>
+</resources>
