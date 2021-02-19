@@ -1,4 +1,4 @@
-package com.janders.itunesapp
+package com.janders.itunesapp.views
 
 import android.app.Activity
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
+import com.janders.itunesapp.R
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
