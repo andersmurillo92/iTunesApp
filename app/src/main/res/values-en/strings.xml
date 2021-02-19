@@ -21,8 +21,10 @@
     <!-- MENU TITLES -->
 
     <string name="title_menu_profile">My profile</string>
+    <string name="title_menu_search">Search</string>
 
     <!-- ACTIVITY NAMES -->
 
     <string name="title_activity_favorites">My favorites</string>
+    <string name="title_activity_search">Search</string>
 </resources>
