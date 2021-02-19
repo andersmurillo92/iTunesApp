@@ -1,4 +1,4 @@
-package com.janders.itunesapp.views
+package com.janders.itunesapp.views.splash
 
 import android.app.Activity
 import android.content.Intent
@@ -10,6 +10,7 @@ import android.view.ViewAnimationUtils
 import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
 import com.janders.itunesapp.R
+import com.janders.itunesapp.views.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -45,8 +46,8 @@ class SplashActivity : AppCompatActivity() {
 
         val mHandler1 = Handler()
         mHandler1.postDelayed({
-            /*goToActivity()
-            finish()*/
+            goToActivity(LoginActivity::class.java)
+            finish()
         }, 1750)
     }
 
