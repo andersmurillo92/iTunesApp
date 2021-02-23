@@ -4,8 +4,10 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin8"
+    android:layout_marginEnd="@dimen/margin8"
     card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="8dp"
+    card_view:cardElevation="4dp"
     card_view:cardUseCompatPadding="true"
     card_view:cardPreventCornerOverlap="true"
     android:clickable="true">

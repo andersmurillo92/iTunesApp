@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.janders.itunesapp.R
 import com.janders.itunesapp.data.model.ResultsModel
+import com.janders.itunesapp.utils.RUtil
 import com.janders.itunesapp.utils.TextUtil.Companion.convertMillisToMinSec
 import com.squareup.picasso.Picasso
 
@@ -37,8 +38,8 @@ class SongViewHolder(inflater: LayoutInflater, parent: ViewGroup) : RecyclerView
 
         title?.text = results.trackName
         artist?.text = results.artistName
-        genre?.text = results.primaryGenreName
-        duration?.text = convertMillisToMinSec(results.trackTimeMillis)
+        genre?.text = "${RUtil.rString(R.string.genre)} ${results.primaryGenreName}"
+        duration?.text = "${RUtil.rString(R.string.duration)} ${convertMillisToMinSec(results.trackTimeMillis)}"
 
         itemView.setOnClickListener {
 

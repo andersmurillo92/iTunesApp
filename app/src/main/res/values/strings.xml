@@ -10,7 +10,8 @@
 
     <!-- SONGS -->
 
-    <string name="duration">Duración: </string>
+    <string name="genre">Género:</string>
+    <string name="duration">Duración:</string>
 
     <!-- MESSAGES TO USER -->
 
