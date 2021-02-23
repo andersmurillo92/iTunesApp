@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.janders.itunesapp.R
 import com.janders.itunesapp.data.model.ResultsModel
+import com.janders.itunesapp.utils.Animations
 import com.janders.itunesapp.views.adapters.PaginationAdapter
 import com.janders.itunesapp.views.base.BaseActivity
 import com.janders.itunesapp.views.pagination.PaginationScrollListener
@@ -18,6 +19,7 @@ class SearchSongsActivity : BaseActivity(), SearchView.OnQueryTextListener {
 
     lateinit var viewModel: SearchSongsViewModel
     var adapter: PaginationAdapter? = null
+    var animations = Animations()
     private val list = ArrayList<ResultsModel>()
     private var currentOffset = 0
     private var limit = 7
@@ -99,6 +101,7 @@ class SearchSongsActivity : BaseActivity(), SearchView.OnQueryTextListener {
             } else {
                 adapter = PaginationAdapter(list)
                 searchSongsRecycler.adapter = adapter
+                animations.runRecyclerAnimation(searchSongsRecycler)
             }
         } else
             adapter?.removeLoadingFooter()
