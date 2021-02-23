@@ -10,8 +10,11 @@
 
     <!-- SONGS -->
 
+    <string name="artist">Artista:</string>
+    <string name="album">Álbum:</string>
     <string name="genre">Género:</string>
     <string name="duration">Duración:</string>
+    <string name="not_available">No disponible</string>
 
     <!-- MESSAGES TO USER -->
 
