@@ -1,6 +1,7 @@
 package com.janders.itunesapp.views.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -10,6 +11,7 @@ import com.janders.itunesapp.R
 import com.janders.itunesapp.data.model.ResultsModel
 import com.janders.itunesapp.utils.RUtil
 import com.janders.itunesapp.utils.TextUtil.Companion.convertMillisToMinSec
+import com.janders.itunesapp.views.detail.SongDetailActivity
 import com.squareup.picasso.Picasso
 
 class SongViewHolder(inflater: LayoutInflater, parent: ViewGroup) : RecyclerView.ViewHolder(inflater.inflate(R.layout.item_song, parent, false)) {
@@ -42,7 +44,19 @@ class SongViewHolder(inflater: LayoutInflater, parent: ViewGroup) : RecyclerView
         duration?.text = "${RUtil.rString(R.string.duration)} ${convertMillisToMinSec(results.trackTimeMillis)}"
 
         itemView.setOnClickListener {
-
+            showMovieDetails(context, results)
         }
+    }
+
+    private fun showMovieDetails(context: Context?, results: ResultsModel){
+        context?.startActivity(
+            Intent(context, SongDetailActivity::class.java)
+                .putExtra("banner", results.artworkUrl100)
+                .putExtra("title", results.trackName)
+                .putExtra("artistName", results.artistName)
+                .putExtra("collectionName", results.collectionName)
+                .putExtra("genre", results.primaryGenreName)
+                .putExtra("duration", results.trackTimeMillis)
+        )
     }
 }
