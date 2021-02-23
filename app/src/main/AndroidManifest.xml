@@ -44,6 +44,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".views.favorites.FavoriteActivity" />
         </activity>
+        <activity
+            android:name=".views.detail.SongDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
