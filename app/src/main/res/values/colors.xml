@@ -7,6 +7,8 @@
     <color name="colorPrimary2">#ef5350</color>
     <color name="colorPrimaryDark2">#b61825</color>
 
+    <color name="alphaAccent">#ddef5350</color>
+
     <color name="black">#000000</color>
     <color name="gray">#eeeeee</color>
     <color name="white">#FFFFFF</color>
