@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin8"
+    android:layout_marginEnd="@dimen/margin8"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="true"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorPrimaryDark"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/trackName_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_marginEnd="@dimen/margin16"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font16"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="@string/slogan"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/iconIv"
+            card_view:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/artist_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_marginEnd="@dimen/margin16"
+            android:textStyle="bold"
+            android:textSize="@dimen/font14"
+            android:singleLine="true"
+            android:text="@string/slogan"
+            card_view:layout_constraintTop_toBottomOf="@id/trackName_txt"
+            card_view:layout_constraintStart_toEndOf="@id/iconIv"
+            card_view:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/genre_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_marginEnd="@dimen/margin16"
+            android:maxWidth="150dp"
+            android:textSize="@dimen/font14"
+            android:singleLine="true"
+            android:text="@string/slogan"
+            card_view:layout_constraintTop_toBottomOf="@id/artist_txt"
+            card_view:layout_constraintStart_toEndOf="@id/iconIv"/>
+
+        <TextView
+            android:id="@+id/duration_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin16"
+            android:textSize="@dimen/font14"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            card_view:layout_constraintTop_toBottomOf="@id/artist_txt"
+            card_view:layout_constraintStart_toEndOf="@id/genre_txt"
+            card_view:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

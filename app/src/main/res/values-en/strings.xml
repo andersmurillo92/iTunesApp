@@ -8,13 +8,34 @@
     <string name="password">Password</string>
     <string name="login">Log in</string>
 
+    <!-- SONGS -->
+
+    <string name="artist">Artist:</string>
+    <string name="album">Album:</string>
+    <string name="genre">Genre:</string>
+    <string name="duration">Duration: </string>
+    <string name="not_available">Not available</string>
+
     <!-- MESSAGES TO USER -->
 
+    <string name="message_title_getting_data">Getting data</string>
     <string name="message_please_wait">Please, wait&#8230;</string>
     <string name="message_title_login">Logging in</string>
     <string name="message_not_connected">Maybe you have no internet access. Please, check your Wi-Fi connection or availability of your network</string>
+    <string name="message_error_ocurred">A connection error has occurred. Please, try again</string>
+    <string name="message_no_result_were_found">No results were found</string>
 
     <!-- ERROR MESSAGES -->
 
     <string name="error_empty_field">This field must not be empty</string>
+
+    <!-- MENU TITLES -->
+
+    <string name="title_menu_profile">My profile</string>
+    <string name="title_menu_search">Search</string>
+
+    <!-- ACTIVITY NAMES -->
+
+    <string name="title_activity_favorites">My favorites</string>
+    <string name="title_activity_search">Search</string>
 </resources>

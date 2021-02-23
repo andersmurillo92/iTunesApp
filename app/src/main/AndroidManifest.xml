@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".iTunesApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,6 +29,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".views.splash.SplashActivity" />
         </activity>
+        <activity
+            android:name=".views.favorites.FavoriteActivity"
+            android:label="@string/title_activity_favorites"
+            android:theme="@style/AppThemeSecondary"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".views.search.SearchSongsActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppThemeSecondary"
+            android:parentActivityName=".views.favorites.FavoriteActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.favorites.FavoriteActivity" />
+        </activity>
+        <activity
+            android:name=".views.detail.SongDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

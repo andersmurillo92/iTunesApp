@@ -9,6 +9,7 @@ import android.text.TextWatcher
 import com.google.android.material.textfield.TextInputLayout
 import com.janders.itunesapp.R
 import com.janders.itunesapp.views.base.BaseActivity
+import com.janders.itunesapp.views.favorites.FavoriteActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity: BaseActivity() {
@@ -64,8 +65,8 @@ class LoginActivity: BaseActivity() {
                 val mHandler1 = Handler()
                 mHandler1.postDelayed({
                     hideProgressDialog()
-                    /*goToActivity()
-                    finish()*/
+                    goToActivity(FavoriteActivity::class.java, arrayOf(Intent.FLAG_ACTIVITY_NEW_TASK, Intent.FLAG_ACTIVITY_CLEAR_TASK))
+                    finish()
                 }, 1750)
             } else {
                 showSimpleToast(resources.getString(R.string.message_not_connected))
